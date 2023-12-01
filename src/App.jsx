@@ -1,7 +1,17 @@
-import ".//css/App.css";
+import { Header } from "./components/Header";
+import bgi from '../src/images/bg-pattern.svg'
 
 function App() {
-  return <div className="App"></div>;
+  const bgPattern = {
+    backgroundImage: `url(${bgi})`,
+    bacgroundPosition: '0 50%',
+  };
+
+  return (
+    <main className="min-h-screen bg-no-repeat px-11" style={bgPattern}>
+      <Header />
+    </main>
+  );
 }
 
 export default App;
