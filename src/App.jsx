@@ -7,11 +7,11 @@ function App() {
     backgroundImage: `url(${bgi})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    backgroundPosition: "0 -250px",
+    backgroundPosition: "-100px -45vh",
   };
 
   return (
-    <main className="min-h-screen px-11 pt-[10%] font" style={bgPattern}>
+    <main className="flex flex-col min-h-screen items-center justify-center gap-12 px-6 font-Manrope" style={bgPattern}>
       <Header />
       <Card />
     </main>
