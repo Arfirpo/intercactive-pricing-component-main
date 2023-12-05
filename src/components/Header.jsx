@@ -1,15 +1,24 @@
 import React from "react";
-import backgroundImage from "../images/pattern-circles.svg";
+import bgCircles from "../images/pattern-circles.svg";
 
 export const Header = () => {
+  const bgCirclesPattern = {
+    backgroundImage: `url(${bgCircles})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "contain",
+  };
+
   return (
     <header
-      className="bg-center bg-no-repeat text-center w-full h-[17.75%] pt-20 px-auto"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      className="flex flex-col align-center justify-center text-center w-full h-[150px] font-Manrope mb-6"
+      style={bgCirclesPattern}
     >
-      <h1 className="text-xl font-bold">Simple, traffic-based pricing</h1>
-      <p>Sign-up for our 30-day trial.</p>
-      <p>No credit card required.</p>
+      <h1 className="text-[20px] font-bold mb-2">Simple, traffic-based pricing</h1>
+      <p className="text-[13.5px] mb-1 text-grayishBlue">
+        Sign-up for our 30-day trial.
+      </p>
+      <p className="text-[13.5px] text-grayishBlue">No credit card required.</p>
     </header>
   );
 };
