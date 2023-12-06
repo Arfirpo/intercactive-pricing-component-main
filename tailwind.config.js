@@ -18,7 +18,7 @@ module.exports = {
         //CTA Text
         paleBlue: "hsl(226, 100%, 87%)",
         //Pricing Component Background
-        White: "hsl (0, 0%, 100%)",
+        White: "hsl(0, 0%, 100%)",
         //Main Background
         veryPaleBlue: "hsl(230, 100%, 99%)",
         //Empty Slider Bar
