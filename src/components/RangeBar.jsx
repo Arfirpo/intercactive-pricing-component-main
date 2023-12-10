@@ -1,8 +1,14 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
 import bgnSlider from "../images/icon-slider.svg";
 
 export const RangeBar = () => {
   const [rangeValue, setRangeValue] = useState(50);
+=======
+
+export const RangeBar = () => {
+  const [rangeValue, setRangeValue] = useState(0);
+>>>>>>> dbb6f965d9d619798f50ef19d67e334c07459674
 
   const handleRangeChange = (event) => {
     setRangeValue(event.target.value);
