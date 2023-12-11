@@ -15,16 +15,13 @@ export const RangeBar = () => {
 
   return (
     <>
-      <div className="w-full h-[75px] flex items-center justify-center">
+      <div className="w-full md:h-[75px] flex items-center justify-center">
         <input
           type="range"
           step={4}
           min={0}
           max={100}
-          className="w-full appearance-none h-3 rounded-full cursor-pointer"
-          min={0}
-          max={100}
-          className="w-full appearance-none h-3 rounded-full cursor-pointer"
+          className="w-full appearance-none rounded-full cursor-pointer"
           value={rangeValue}
           onChange={handleRangeChange}
         />
@@ -32,8 +29,8 @@ export const RangeBar = () => {
       <style>
         {`
           input[type="range"]::-webkit-slider-thumb {
-            width: 5rem;
-            height: 5rem;
+            width: 3rem;
+            height: 3rem;
             background-color: hsl(174, 86%, 45%);
             background-image: url(${bgnSlider});
             background-repeat: no-repeat;
@@ -42,7 +39,7 @@ export const RangeBar = () => {
             border: none;
             border-radius: 50%;
             cursor: pointer;
-            margin-top: -32px;
+            margin-top: -16px;
             -webkit-appearance: none;
             box-shadow: 0 20px 25px 8px #a5f3eb;
           }
@@ -50,7 +47,7 @@ export const RangeBar = () => {
             background-color: hsl(174, 77%, 80%);
           }
           input[type="range"]::-webkit-slider-runnable-track {
-            height: 20px;
+            height: 15px;
             border-radius: 50px;
             background: linear-gradient(
               to right,
@@ -59,6 +56,18 @@ export const RangeBar = () => {
               hsl(224, 65%, 95%) ${calculateThumbPosition() * 100}%,
               hsl(224, 65%, 95%) 100%
             );
+          }
+          @media (min-width:750px){
+            input[type="range"]::-webkit-slider-thumb {
+              width: 5rem;
+              height: 5rem;
+              background-color: hsl(174, 86%, 45%);
+              margin-top: -27px;
+            }
+            input[type="range"]::-webkit-slider-runnable-track {
+              height: 30px;
+              
+            }
           }
         `}
       </style>

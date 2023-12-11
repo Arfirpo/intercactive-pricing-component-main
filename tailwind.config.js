@@ -2,6 +2,16 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    backgroundSize: {
+      '50%':'50%',
+      'contain': 'contain'
+    },
+    screens: {
+      mbl: "375px",
+      md: "750px",
+      lg: "1024px",
+      xl: "1400"
+    },
     extend: {
       fontFamily: {
         Manrope: ["Manrope", "sans-serif"],
