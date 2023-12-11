@@ -22,6 +22,9 @@ export const RangeBar = () => {
           min={0}
           max={100}
           className="w-full appearance-none h-3 rounded-full cursor-pointer"
+          min={0}
+          max={100}
+          className="w-full appearance-none h-3 rounded-full cursor-pointer"
           value={rangeValue}
           onChange={handleRangeChange}
         />
