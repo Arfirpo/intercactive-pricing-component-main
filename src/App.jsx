@@ -11,10 +11,10 @@ function App() {
   };
 
   return (
-    <main className="flex flex-col min-h-screen items-center justify-center gap-12 px-6 font-Manrope" style={bgPattern}>
+    <div className="flex flex-col min-h-screen items-center justify-evenly  px-6 font-Manrope" style={bgPattern}>
       <Header />
       <Card />
-    </main>
+    </div>
   );
 }
 
