@@ -15,7 +15,7 @@ export const RangeBar = () => {
 
   return (
     <>
-      <div className="w-full md:h-[75px] flex items-center justify-center">
+      <div className="w-full md:h-[75px] xl:h-10 flex items-center justify-center xl:col-start-1 col-end-3 row-start-2 row-end-3">
         <input
           type="range"
           step={4}
@@ -57,15 +57,15 @@ export const RangeBar = () => {
               hsl(224, 65%, 95%) 100%
             );
           }
-          @media (min-width:750px){
+          @media (min-width:760px){
             input[type="range"]::-webkit-slider-thumb {
-              width: 5rem;
-              height: 5rem;
+              width: 2.5rem;
+              height: 40px;
               background-color: hsl(174, 86%, 45%);
-              margin-top: -27px;
+              margin-top: -16px;
             }
             input[type="range"]::-webkit-slider-runnable-track {
-              height: 30px;
+              height: 8px;
               
             }
           }

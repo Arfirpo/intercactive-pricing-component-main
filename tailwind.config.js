@@ -3,14 +3,15 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     backgroundSize: {
-      '50%':'50%',
-      'contain': 'contain'
+      "50%": "50%",
+      contain: "contain",
     },
     screens: {
       mbl: "375px",
-      md: "750px",
+      sm: "425px",
+      md: "768px",
       lg: "1024px",
-      xl: "1400"
+      xl: "1400px",
     },
     extend: {
       fontFamily: {

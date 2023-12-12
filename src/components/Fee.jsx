@@ -4,18 +4,18 @@ import { ToggleSlider } from "./ToogleSlider";
 
 export const Fee = () => {
   return (
-    <section className="flex flex-col justify-evenly items-center w-full h-[60%] border-gray-300 border-b px-[18px] pb-9">
-      <div className="flex flex-col justify-evenly h-[75%] w-full text-center text-l ">
-        <h1 className="text-lg md:text-[1.875rem] font-bold">
+    <section className="flex flex-col justify-evenly items-center w-[84%] h-[70%] xl:gap-6 pb-9">
+      <div className="flex flex-col justify-evenly h-[75%] w-full text-center  xl:grid xl:grid-cols-2 xl:grid-rows-2 xl:place-items-center">
+        <h1 className="text-sm md:text-[1.875rem] xl:text-sm font-bold justify-self-start">
           <span>100K</span> PAGEVIEWS
         </h1>
         <RangeBar />
-        <p className="flex items-center justify-center gap-2 text-xs md:text-2xl">
-          <span className="text-darkDesaturatedBlue font-bold  text-4xl md:text-6xl">$</span>
-          <span className="text-darkDesaturatedBlue font-bold  text-4xl md:text-6xl">16.00</span> / month
+        <p className="flex items-center justify-center gap-2 text-xs md:text-2xl xl:text-sm xl:justify-self-end">
+          <span className="text-darkDesaturatedBlue font-bold  text-4xl md:text-3xl">$</span>
+          <span className="text-darkDesaturatedBlue font-bold  text-4xl md:text-4xl ">16.00</span> / month
         </p>
       </div>
-      <div className="text-xs md:text-2xl flex items-center justify-around w-full h-[15%]">
+      <div className="text-xs md:text-sm flex items-center justify-evenly xl:justify-end xl:gap-8 w-full h-[15%]">
         <p>Monthly Billing</p>
         <ToggleSlider />
         <p>Year Billing</p>
