@@ -3,7 +3,7 @@ import { Promotion } from "./Promotion";
 
 export const Card = () => {
   return (
-    <main className="flex flex-col items-center w-[95%] sm:h-[60%] md:w-[85%] xl:w-[37.5%] h-[560px] md:h-[75%] xl:h-[50%] text-grayishBlue border-2 border-red-600 rounded-lg bg-White">
+    <main className="flex flex-col items-center w-[90%] sm:w-[80%] lg:w-[55%] xl:w-[37.5%] h-[70vh]  md:h-[75%] lg:h-[50vh] text-grayishBlue border-2 border-red-600 rounded-lg bg-White">
       <Fee />
       <Promotion />
     </main>

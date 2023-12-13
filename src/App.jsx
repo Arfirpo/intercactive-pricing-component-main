@@ -11,7 +11,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col w-full min-h-screen h-[812px] sm:h-[50rem] xl:gap-7 items-center justify-center mbl:gap-5 font-Manrope" style={bgPattern}>
+    <div className="flex flex-col min-h-screen h-[812px] xs:h-[100vh] xl:gap-7 items-center justify-center gap-5 font-Manrope" style={bgPattern}>
       <Header />
       <Card />
     </div>

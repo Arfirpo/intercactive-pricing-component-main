@@ -7,11 +7,12 @@ module.exports = {
       contain: "contain",
     },
     screens: {
-      mbl: "375px",
-      sm: "425px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1400px",
+      xs: "20rem",
+      mbl: "23.4375rem",
+      sm: "26.5625rem",
+      md: "48rem",
+      lg: "64rem",
+      xl: "87.5rem",
     },
     extend: {
       fontFamily: {
