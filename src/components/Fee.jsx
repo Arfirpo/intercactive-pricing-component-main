@@ -69,9 +69,9 @@ export const Fee = () => {
             $
           </span>
           <span className="text-darkDesaturatedBlue font-bold  text-4xl md:text-4xl ">
-            {pricingDeets[rangeValue][isMonthly ? "monthly" : "yearly"]}
+            {pricingDeets[rangeValue][!isMonthly ? "monthly" : "yearly"]}.00
           </span>
-          / <span>{isMonthly ? "Month" : "Year"}</span>
+          / <span>{!isMonthly ? "Month" : "Year"}</span>
         </p>
       </div>
       <div className=" text-[.7rem] mbl:text-xs md:text-sm flex items-center justify-evenly xl:justify-end xl:gap-8 w-full h-[15%]">
@@ -79,7 +79,7 @@ export const Fee = () => {
         <ToggleSlider checked={isMonthly} onChange={handleToggleChange} />
         <p>Year Billing</p>
         <div className="border-none text-lightRed bg-lightGrayishRed px-2 py-1 rounded-full">
-          <p>-25%</p>
+          <p><span className="lg:hidden">-</span>25% <span className="hidden lg:inline">Discount</span></p>
         </div>
       </div>
       <style>

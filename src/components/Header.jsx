@@ -10,7 +10,7 @@ export const Header = () => {
 
   return (
     <header
-      className=" border-2 border-red-600 flex flex-col items-center justify-center text-center w-[90%] h-[18vh] sm:w-[80%] lg:w-[55%] xl:w-[37.5%] bg-contain"
+      className="flex flex-col items-center justify-center text-center w-[90%] h-[18vh] sm:w-[80%] lg:w-[55%] xl:w-[37.5%] bg-contain"
       style={bgCirclesPattern}
     >
       <h1 className=" text-[1.2rem] mbl:text-[1.4rem] md:text-[1.6rem] xl:text-[2rem] font-bold mb-2">
