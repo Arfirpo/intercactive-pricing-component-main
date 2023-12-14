@@ -113,7 +113,7 @@ export const Fee = () => {
               hsl(224, 65%, 95%) 100%
             );
           }
-          @media (min-width:760px){
+          @media (min-width:768px){
             input[type="range"]::-webkit-slider-thumb {
               width: 2.5rem;
               height: 40px;
@@ -129,8 +129,9 @@ export const Fee = () => {
             .toggle__line:hover {
               background: hsl(174, 77%, 80%);
             }
+          }
             
-            .toggle__dot {
+          .toggle__dot {
               transition: transform 0.3s;
             }
             
@@ -145,7 +146,7 @@ export const Fee = () => {
             }
             @media (min-width:46.875rem){
               .transform-translate {
-                transform: translateX(100%);
+                transform: translateX(142%);
               }
             }
           }
