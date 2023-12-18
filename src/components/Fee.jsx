@@ -64,17 +64,18 @@ export const Fee = () => {
           PAGEVIEWS
         </h1>
         <RangeBar value={rangeValue} onChange={handleRangeChange} />
-        <p className="flex items-center justify-center gap-2 text-xs md:text-2xl xl:text-sm xl:justify-self-end">
-          <span className="text-darkDesaturatedBlue font-bold  text-4xl md:text-3xl">
+        <p className="flex items-center justify-center text-sm md:text-2xl xl:text-sm xl:justify-self-end">
+          <span className="text-darkDesaturatedBlue font-bold text-3xl sm:text-4xl md:text-5xl">
             $
           </span>
-          <span className="text-darkDesaturatedBlue font-bold  text-4xl md:text-4xl ">
+          <span className="text-darkDesaturatedBlue font-bold text-3xl sm:text-4xl md:text-5xl ">
             {pricingDeets[rangeValue][!isMonthly ? "monthly" : "yearly"]}.00
           </span>
-          / <span>{!isMonthly ? "Month" : "Year"}</span>
+          <span className="ml-1 mr-1">/</span>
+          <span>{!isMonthly ? "Month" : "Year"}</span>
         </p>
       </div>
-      <div className=" text-[.7rem] mbl:text-xs md:text-sm flex items-center justify-evenly xl:justify-end xl:gap-8 w-full h-[15%]">
+      <div className="text-[.57rem] gap-2 md:gap-7 mbl:text-[.7rem] mbl:text-xs md:text-sm flex text-center items-center justify-end xl:justify-end xl:gap-8 w-full h-[15%]">
         <p>Monthly Billing</p>
         <ToggleSlider checked={isMonthly} onChange={handleToggleChange} />
         <p>Year Billing</p>
